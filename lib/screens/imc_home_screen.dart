@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/componenets/gender_selector.dart';
 
 class ImcHomeScreen extends StatefulWidget {
   const ImcHomeScreen({super.key});//contructor
@@ -10,6 +11,10 @@ class ImcHomeScreen extends StatefulWidget {
 class _ImcHomeScreenState extends State<ImcHomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return  Placeholder();
+    return  Column(
+      children: [
+        GenderSelector(),
+      ],
+    );
   }
 }
