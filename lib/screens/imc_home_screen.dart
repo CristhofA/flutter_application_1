@@ -3,7 +3,6 @@ import 'package:flutter_application_1/componenets/gender_selector.dart';
 import 'package:flutter_application_1/componenets/height_selector.dart';
 import 'package:flutter_application_1/componenets/number_selector.dart';
 import 'package:flutter_application_1/core/app_color.dart';
-import 'package:flutter_application_1/core/text_styles.dart';
 import 'package:flutter_application_1/screens/imc_resolt.dart';
 
 class ImcHomeScreen extends StatefulWidget {
