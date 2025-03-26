@@ -3,14 +3,15 @@ import 'package:flutter_application_1/core/app_color.dart';
 import 'package:flutter_application_1/core/text_styles.dart';
 
 class HeightSelector extends StatefulWidget {
-  const HeightSelector({super.key});
+  final double selectedHeight;
+  final Function(double) onHeightAge;
+  const HeightSelector({super.key, required this.selectedHeight, required this.onHeightAge});
 
   @override
   State<HeightSelector> createState() => _HeightSelectorState();
 }
 
 class _HeightSelectorState extends State<HeightSelector> {
-  double  height = 168;//Altura inicial
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class _HeightSelectorState extends State<HeightSelector> {
               padding: const EdgeInsets.only(top: 8.0),
               child: Text("ALTURA",style: TextStyles.bodyText),
             ),
-            Text("${height.toStringAsFixed(0)}cm" //toStringAsFixed converrtimos en entero el valor par poner que nos muestre 0 decimales y se vea solo el numero entero
+            Text("${widget.selectedHeight.toStringAsFixed(0)}cm" //toStringAsFixed converrtimos en entero el valor par poner que nos muestre 0 decimales y se vea solo el numero entero
             ,style: TextStyle(
               color:Colors.black,
               fontSize: 38,
@@ -35,16 +36,14 @@ class _HeightSelectorState extends State<HeightSelector> {
             ),
             ),
             //Barra para ajustar la estatura
-            Slider(value: height,//Ponemos el valor
+            Slider(value: widget.selectedHeight,//Ponemos el valor
             onChanged: (newH){//Modificamops el valor para que la barra se mueva
-              setState(() { //setState siempre que se requiera modificar el Ui
-                height = newH;
-              });
+             widget.onHeightAge(newH);
             },
             min:100 ,
             max:220 ,
             divisions: 120,//Para la cantidad de pasos que podra moverse la barra 
-            label: "${height.toStringAsFixed(0)}cm",//Aparece una burbuja al mover la barra por lo general se pone la variable para ver el valor si no estubiar mostrado
+            label: "${widget.selectedHeight.toStringAsFixed(0)}cm",//Aparece una burbuja al mover la barra por lo general se pone la variable para ver el valor si no estubiar mostrado
            activeColor: AppColors.primary,
             )
                   ],

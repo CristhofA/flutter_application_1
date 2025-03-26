@@ -10,6 +10,6 @@ class AppColors{
   //Backgrounds
   static const Color Backgrounds = Color(0xFF5C0910); //Color de fondo
   static const Color BackgroundsComponents = Color(0xFFF8EFED); //Color de fondo de los componentes 
-  static const Color BackgroundsComponentSelected = Color(0xFFC6D4ED);//Color de los componenetes seleccionados
+  static const Color BackgroundsComponentSelected = Color(0xFFD2A8A8);//Color de los componenetes seleccionados
 
 }
