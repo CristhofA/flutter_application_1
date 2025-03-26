@@ -12,9 +12,13 @@ Una aplicación básica para calcular el **Índice de Masa Corporal (IMC)** desa
 - **Flutter**  
 - **Dart**  
 
-## 📸 Capturas de pantalla  
-| ![Pantalla 1](assets/screenshot1.png) | ![Pantalla 2](assets/screenshot2.png) |
 
+## 📸 Capturas de pantalla  
+
+<div align="center">
+  <img src="assets/images/screenshot/captura1.jpeg" alt="Pantalla 1" width="45%"/>
+  <img src="assets/images/screenshot/captura2.jpeg" alt="Pantalla 2" width="45%"/>
+</div>
 ## 🚀 Cómo ejecutar el proyecto  
 1. Clona este repositorio:  
    ```bash
