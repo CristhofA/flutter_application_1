@@ -13,8 +13,8 @@ Una aplicación básica para calcular el **Índice de Masa Corporal (IMC)** desa
 - **Dart**  
 
 ## 📸 Capturas de pantalla  
-![Pantalla principal](assets/screenshot/captura1.jpeg)
-![Pantalla resultado](assets/screenshot/captura2.jpeg)
+![Pantalla principal](assets/images/screenshot/captura1.jpeg)
+![Pantalla resultado](assets/images/screenshot/captura2.jpeg)
 
 ## 🚀 Cómo ejecutar el proyecto  
 1. Clona este repositorio:  
